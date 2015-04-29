@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app="compras">
+    <head>
+        <title>Lista de compras com AngularJS</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/lista-compras.css">
+        <script src="lib/angular.min.js" type="text/javascript"></script>
+        <script src="app/lista-compras.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div class="container" ng-controller="ListaComprasController">
+            <div class="row">
+                <div class="page-header">
+                    <h1>Lista de compras</h1>
+                </div>
+            </div>
+            <div class="row">
+                <table id="lista-compras" class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th ng-click="ordenador = 'comprado';
+                                        inverter = !inverter">Comprado?</th>
+                            <th ng-click="ordenador = 'produto';
+                                        inverter = !inverter">Produto</th>
+                            <th ng-click="ordenador = 'quantidade';
+                                        inverter = !inverter">Quantidade</th>
+                            <th>Opções</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="item in itens| orderBy:ordenador:inverter" class="comprado-{{ item.comprado}}">
+                            <td><input type="checkbox" ng-model="item.comprado"></td>
+
+                            <td><strong>{{ item.produto}}</strong></td>
+                            <td>{{ item.quantidade}}</td>
+                            <td><button class="btn btn-mini" ng-click="deleteItem(item.id)" title="Excluir"><i class="icon-remove"></i></button><button class="btn btn-mini btn-right" ng-click="editarItem(item.id)" title="Editar"><i class="icon-edit"></i></button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="row">
+                <form class="form-inline" name="formItem">
+                    <input type="text" ng-model="itemInput.produto" placeholder="Produto">
+                    <input type="number" ng-model="itemInput.quantidade" placeholder="Quantidade" class="input-mini">
+                    <button class="btn btn-primary" ng-click="adicionaItem()">adicionar ítem</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

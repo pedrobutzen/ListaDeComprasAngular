@@ -1,0 +1,17 @@
+#lista-compras {
+    width: 460px;
+}
+#lista-compras td, #lista-compras th {
+    text-align: center;
+}
+.comprado-true {
+    text-decoration: line-through;
+    color: red;
+}
+
+tr th{
+    cursor: pointer;
+}
+.btn-right{
+    margin-left: 5px;
+}

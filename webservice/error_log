@@ -1,0 +1,14 @@
+[02-Mar-2015 12:45:03] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/pedro728/public_html/angular/webservice/compras.php on line 12
+[02-Mar-2015 13:33:12] PHP Fatal error:  Unsupported operand types in /home/pedro728/public_html/angular/webservice/compras.php on line 20
+[02-Mar-2015 19:21:37] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/pedro728/public_html/angular/webservice/compras.php on line 7
+[02-Mar-2015 19:24:48] PHP Fatal error:  Cannot break/continue 1 level in /home/pedro728/public_html/angular/webservice/compras.php on line 7
+[02-Mar-2015 20:20:43] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/pedro728/public_html/angular/webservice/compras.php on line 27
+[02-Mar-2015 21:29:48] PHP Fatal error:  Cannot use object of type stdClass as array in /home/pedro728/public_html/angular/webservice/index.php on line 30
+[02-Mar-2015 21:30:11] PHP Fatal error:  Cannot use object of type stdClass as array in /home/pedro728/public_html/angular/webservice/index.php on line 30
+[02-Mar-2015 21:30:21] PHP Fatal error:  Cannot use object of type stdClass as array in /home/pedro728/public_html/angular/webservice/index.php on line 30
+[02-Mar-2015 21:30:40] PHP Fatal error:  Cannot use object of type stdClass as array in /home/pedro728/public_html/angular/webservice/index.php on line 30
+[02-Mar-2015 21:31:51] PHP Fatal error:  Cannot use object of type stdClass as array in /home/pedro728/public_html/angular/webservice/index.php on line 29
+[02-Mar-2015 21:33:03] PHP Fatal error:  Cannot use object of type stdClass as array in /home/pedro728/public_html/angular/webservice/index.php on line 30
+[02-Mar-2015 21:43:20] PHP Catchable fatal error:  Object of class stdClass could not be converted to string in /home/pedro728/public_html/angular/webservice/index.php on line 30
+[02-Mar-2015 21:43:41] PHP Fatal error:  Cannot use object of type stdClass as array in /home/pedro728/public_html/angular/webservice/index.php on line 32
+[02-Mar-2015 21:51:08] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/pedro728/public_html/angular/webservice/index.php on line 29
